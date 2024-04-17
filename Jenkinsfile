@@ -19,5 +19,5 @@ pipeline{
                 git branch: 'master', url:'https://github.com/LukaLmelias/gallery.git'
             }
         }
-        
+    }
 }
