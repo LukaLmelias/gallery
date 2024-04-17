@@ -34,6 +34,15 @@ pipeline{
                 sh "npm test"
             }
         }
+
+
+        // stage 4
+        stage("Deploy"){
+            steps{
+                sh "curl https://api.render.com/deploy/srv-cofnv76v3ddc739mdj6g?key=MqZUsVkPGaQ"
+            }
+        }
+        
         
         
     }
