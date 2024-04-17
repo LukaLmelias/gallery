@@ -27,6 +27,14 @@ pipeline{
             }
         }
         
+
+        // stage 2
+        stage("npm test"){
+            steps{
+                sh "npm test"
+            }
+        }
+        
         
         
     }
