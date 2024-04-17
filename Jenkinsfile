@@ -6,7 +6,7 @@ pipeline{
 
     // define tools
     tools{
-        gradle 'node'
+        nodejs 'node'
     }
 
 
@@ -19,5 +19,15 @@ pipeline{
                 git branch: 'master', url:'https://github.com/LukaLmelias/gallery.git'
             }
         }
+        
+        // stage 2
+        stage("npm test"){
+            steps{
+                sh "npm test"
+            }
+        }
+        
+        
+        
     }
 }
