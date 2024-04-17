@@ -35,14 +35,6 @@ pipeline{
             }
         }
         
-
-        // stage 4
-        stage("start server"){
-            steps{
-                sh "node server"
-            }
-        }
-        
         
     }
 }
