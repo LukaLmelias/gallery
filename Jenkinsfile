@@ -42,11 +42,14 @@ pipeline{
                 sh "curl https://api.render.com/deploy/srv-cofnv76v3ddc739mdj6g?key=MqZUsVkPGaQ"
             }
         }
+    
+    }
+    
+    // post to slack on success
     post {
         success {
             slackSend "Build deployed successfully - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
         }
-    }
 
         // // post to slack on Failure
         // post {
