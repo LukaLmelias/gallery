@@ -1,3 +1,10 @@
+// define slack notification colors
+def COLOR_MAP = [
+    'FAILURE' : 'danger',
+    'SUCCESS' : 'good'
+]
+
+
 pipeline{
     
     // define agents
@@ -45,12 +52,16 @@ pipeline{
     
     }
     
-    // post to slack on success
+    // post to slack on success/failure
     post {
-        success {
-            slackSend "Build deployed successfully "
+        always {
+            slackSend(
+                channel: '#luka_ip1',
+                color: COLOR_MAP[currentBuild.currentResult],
+                message: "*${currentBuild.currentResult}:* job ${env.JOB_NAME}  \n build ${env.BUILD_NUMBER} \n more info at (<${env.BUILD_URL}|Open>) "
+            )
         }
-        //- ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)
+        //"Build deployed successfully "- ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)
         // // post to slack on Failure
         // post {
         //     failure {
