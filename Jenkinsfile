@@ -30,7 +30,7 @@ pipeline{
         // stage 2
         stage("npm install"){
             steps{
-                sh "rm -rf /var/jenkins_home/workspace/gallery-pipeline/node_modules/log-symbols" // remove some locked files
+                sh "rm -rf /var/jenkins_home/workspace/gallery-pipeline/node_modules" // remove some locked files
                 sh "npm install"
             }
         }
