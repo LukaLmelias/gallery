@@ -46,7 +46,7 @@ pipeline{
         // stage 4
         stage("Deploy to render"){
             steps{
-                sh "curl https://api.render.com/deploy/srv-cofnv76v3ddc739mdj6g?key=MqZUsVkPGaQ"
+                sh "curl ${env.RENDER_WEBHOOK}"
             }
         }
     
