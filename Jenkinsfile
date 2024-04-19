@@ -27,21 +27,21 @@ pipeline{
             }
         }
         
-        // // stage 2
-        // stage("npm install"){
-        //     steps{
-        //         sh "rm -rf /var/jenkins_home/workspace/gallery-pipeline/node_modules" // remove some locked files
-        //         sh "npm install"
-        //     }
-        // }
+        // stage 2
+        stage("npm install"){
+            steps{
+                sh "rm -rf /var/jenkins_home/workspace/gallery-pipeline/node_modules" // remove some locked files
+                sh "npm install"
+            }
+        }
         
 
-        // // stage 3
-        // stage("npm test"){
-        //     steps{
-        //         sh "npm test"
-        //     }
-        // }
+        // stage 3
+        stage("npm test"){
+            steps{
+                sh "npm test"
+            }
+        }
 
 
         // stage 4
