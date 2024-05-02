@@ -9,7 +9,7 @@ I used webhooks such that git commits triggers deployement of the gallery webapp
 
 
 
-feel free to play around with my first deployed project: https://gallery-un7s.onrender.com
+feel free to check it on this link (it is safe to click i promise 😄): https://gallery-un7s.onrender.com
 
 Below is how the landing page appears:
 
