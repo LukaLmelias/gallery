@@ -11,7 +11,7 @@ I used webhooks such that git commits triggers deployement of the gallery webapp
 
 feel free to check it on this link : https://gallery-un7s.onrender.com (it is safe to click i promise 😄)
 
-Below is how the landing page appears:
+Below is a screenshot opf the landing page:
 
 
 ![image](https://github.com/LukaLmelias/gallery/assets/71344715/743eb1cb-9481-4218-80dd-a121cdbd77ae)
