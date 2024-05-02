@@ -1,4 +1,4 @@
-# Gallery
+# Gallery Portal
 
 
 Gallerry portal is a simple webapp were users can upload images which will be stored on MongoDb.
