@@ -3,7 +3,7 @@
 
 Gallerry portal is a simple webapp were users can upload images which will be stored on MongoDb.
 
-The goal was to learn to automate CI/CD process using Jenkins. script used is in [Jenkinesfile](https://github.com/LukaLmelias/gallery/blob/master/Jenkinsfile)
+The goal was to learn to automate CI/CD process using Jenkins. Here is the script that I used: [Jenkinesfile](https://github.com/LukaLmelias/gallery/blob/master/Jenkinsfile)
 
 I used webhooks such that git commits triggers deployement of the gallery webapp.
 
